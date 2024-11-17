@@ -9,7 +9,7 @@ To build this setup we have to build below components -
   Static Website hosted on Blob Storage.
   Network Virtual Network with Public and Private Subnet.
   Backend Service in Public Subnet expose to API with respective DB for applicaiton.
-  Backend Service in Private Subnet expose to Private API with respective DB for application. NAT Gateway in Private subnet to allow the outboud communication to internet on specific IP Rage.
+  Backend Service in Private Subnet expose to Private API with respective DB for application. private endpoint to allow access to api privately and firewall rule to allow only outboudn IP traffic as requested..
 
 
 This Case study is build using Terraform and can be build on Azure using Various way either Jenkins or Gitlab file can be added if we have those tools available or this case study file can be deployed
