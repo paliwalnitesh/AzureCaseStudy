@@ -18,11 +18,17 @@ to Azure using Terraform and Azure CLI also as mentioned below -
 PreRequisitics -
 Install Azure CLI
 Install Terraform
-
+Create Storage Account in Blob Storage to store the State of Terraform -  'statestoragecase' 
 
 Authentication to Azure -
-bash
 az login (Make sure you have needed subscription with credentials to build resources)
 
+Clone the Code  -
+git clone https://github.com/paliwalnitesh/AzureCaseStudy.git
+
+Initiate Terraform to see the plan -
+terraform init
+terraform plan -out=tfplan
+terraform apply tfplan
 
 
